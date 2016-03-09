@@ -1,0 +1,13 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title> all data</title>
+	</head>
+	<body>
+		<h2>Daftar harga barang</h2>
+		{% for daftar in barang %}
+			<h3><a href="/data/{{daftar.id}}">{{daftar.nama_barang}}</a></h3>
+		{% endfor %}
+		<button><a href="/data/add">Add</a></button>
+	</body>
+</html>

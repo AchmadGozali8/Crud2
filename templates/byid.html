@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>select data by id</title>
+	</head>
+	<body>
+		<h2>Data berdasrkan id</h2>
+		<i>tahun expaier</i><br>1 = 2017<br>2 = 2018<br>3 = 2019<br>4 = 2020
+		<p>Nama Barang:{{barang.nama_barang}}</p>
+		<p>Harga Barang:{{barang.harga}}</p>
+		<p>Tahun expaier: {{barang.tahun_expaire}}
+		<p>Update Harga :{{barang.update_harga}}
+		<br><br>
+		<button><a href="/data/update/{{barang.id}}">Update</a></button>
+		<button><a href="/data/delete/{{barang.id}}">Delete</a></button>
+	</body>
+</html>
